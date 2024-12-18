@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio showcasing my artworks">
+    <title>My Art Portfolio</title>
+    <link href="pstyles.css" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Welcome to My Art Portfolio</h1>
+    <p>Explore my collection of artwork and feel the creativity</p>
+</header>
+
+<div class="container gallery">
+    <h2 class="text-center mb-4">My Artworks</h2>
+    <div class="row">
+        <!-- Dynamically insert all artworks -->
+        <script>
+            const artworks = [
+                { src: "pictures/1660164670699.jpg", title: "Whisper of Autumn and a blue meadow" },
+                { src: "pictures/1660164670838.jpg", title: "Marin Kitagawa" },
+                { src: "pictures/1729394820656.jpg", title: "Sanemi" },
+                { src: "pictures/d1.jpg", title: "BUOC-Chan" },
+                { src: "pictures/d2.jpg", title: "Switch- race against the time" },
+                { src: "pictures/d3.jpg", title: "A Dragon's Lair" },
+                { src: "pictures/d4.jpg", title: "Apocalyptic Background" },
+                { src: "pictures/d5.png", title: "A New Era of Art" },
+                { src: "pictures/d6.jpg", title: "Bu-Student-Marin" },
+                { src: "pictures/d7.jpg", title: "Self-vector Art" },
+                { src: "pictures/d8.png", title: "Senakulo" },
+                { src: "pictures/d9.png", title: "Social Media: Reality and Illusion" },
+                { src: "pictures/d10.png", title: "My OC Character" },
+                { src: "pictures/d11.png", title: "Anime Version ButterCup" },
+                { src: "pictures/d12.png", title: "My Self Anime Version" },
+                { src: "pictures/d13.png", title: "Pandoruuu" },
+                { src: "pictures/den1.png", title: "Denji" },
+                { src: "pictures/lu1.jpg", title: "Luffy" },
+                { src: "pictures/nat1.png", title: "Natsu" },
+                { src: "pictures/oka1.jpg", title: "Okarun-Ken Takakura" },
+                { src: "pictures/t1.jpg", title: "Kalayaan: A Journey of Resilience" },
+                { src: "pictures/t2.jpg", title: "Yelan" },
+                { src: "pictures/t3.jpg", title: "Juvia Drawing" },
+                { src: "pictures/t4.jpg", title: "Natsu Drawing" },
+                { src: "pictures/t5.jpg", title: "Gray Drawing" },
+                { src: "pictures/t6.jpg", title: "Lucy Drawing" },
+                { src: "pictures/t7.jpg", title: "Erza Drawing" },
+                { src: "pictures/t8.jpg", title: "Spy Family Drawing" },
+                { src: "pictures/t9.jpg", title: "Your Lie in April Drawing" },
+                { src: "pictures/t10.jpg", title: "Tanjiro Drawing" },
+                { src: "pictures/t11.jpg", title: "Taylor Swift" },
+                { src: "pictures/t12.jpg", title: "Female Portrait" },
+                { src: "pictures/t13.jpg", title: "Ocean's Lullaby" },
+                // Additional artworks...
+            ];
+
+            let galleryHTML = '';
+            artworks.forEach((art, index) => {
+                galleryHTML += `
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="art-item" data-bs-toggle="modal" data-bs-target="#artModal${index}">
+                            <img src="${art.src}" alt="Artwork ${index + 1}">
+                            <p>${art.title}</p>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="artModal${index}" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <img src="${art.src}" alt="Artwork ${index + 1}" class="img-fluid rounded">
+                                    <h5 class="mt-3">${art.title}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.write(galleryHTML);
+        </script>
+    </div>
+</div>
+
+<div class="home-link">
+    <a href="index.html">
+        <img src="pictures/25694.png" alt="Home" class="home-img">
+        Back to Home Page
+    </a>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Art Portfolio. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

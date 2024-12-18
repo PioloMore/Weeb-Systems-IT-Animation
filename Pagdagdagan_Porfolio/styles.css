@@ -1,0 +1,215 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(to bottom right, #d4e2d4, #f5f5f5);
+  color: #555;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #5a5a5a;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+/* Introduction Section */
+.intro-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: url(pictures/background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-section h1 {
+  font-weight: 700;
+  color: #4B6F44
+}
+
+.intro-section p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #4B5320
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.btn-portfolio {
+  background-color: #b2d235;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.btn-portfolio:hover {
+  background-color: #91b82b;
+}
+
+/* About Me Section */
+.about-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.about-section .about-text {
+  width: 60%;
+  padding-right: 40px;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-section .about-image {
+  flex: 1;
+}
+
+.about-me-img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Background Section */
+.background-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.background-section h2 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.background-content h4 {
+  margin-top: 20px;
+}
+
+.background-content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Portfolio Section */
+.fixed-image {
+  width: 100%; /* Ensures responsiveness */
+  max-height: 300px; /* Set a consistent height */
+  object-fit: cover; /* Ensures images are cropped neatly to fit */
+  border-radius: 10px; /* Optional: Rounded corners for a polished look */
+}
+
+.Portfolio-section {
+  padding: 60px 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.Portfolio-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.Portfolio-section .project {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Portfolio-section .project img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Portfolio-section .project h4 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.Portfolio-section .project p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* More of My Work Section */
+.more-work-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.more-work-section img {
+  transition: transform 0.3s ease;
+}
+
+.more-work-section img {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image maintains proportions within the fixed size */
+  border-radius: 8px; /* Optional: Add rounded corners for a polished look */
+}
+
+.more-work-section img:hover {
+  transform: scale(1.05);
+}
+
+.more-work-section .btn-outline-light {
+  font-size: 1rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.more-work-section .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* Contact Me Section */
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-section .btn-primary {
+  background-color: #e67e22;
+  border-color: #e67e22;
+  padding: 10px 30px;
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #d35400;
+  border-color: #d35400;
+}
+
+.contact-section img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.contact-section img:hover {
+  transform: scale(1.1);
+}
